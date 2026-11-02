@@ -1,4 +1,4 @@
-# Assignment 2: Winter Drop Puffets
+# Assignment 2:Winter Drop Puffets
 
 ## Concepts practiced
 - CSS Flexbox concepts

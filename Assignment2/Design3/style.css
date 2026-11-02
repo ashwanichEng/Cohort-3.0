@@ -1,0 +1,311 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+/* Global Styles */
+main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+}
+/*Centering the image*/
+img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  object-fit: contain;
+  mix-blend-mode: multiply;
+  height: 80%;
+  width: 80%;
+}
+/*left-div*/
+.left {
+  height: 100%;
+  width: 50%;
+  background-color: #fefefe;
+  position: relative;
+}
+/*header left*/
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  padding: 20px 30px;
+}
+
+.header-left h1 {
+  font-size: 20px;
+}
+/* Search bar */
+.search-bar-wrapper {
+  display: block;
+  width: 300px;
+  height: 40px;
+  padding: 10px 20px;
+  border-radius: 50px;
+  background-color: rgba(246, 240, 240, 0.923);
+}
+
+.search-bar-wrapper .search {
+  margin-left: 20px;
+}
+/* Left bottom */
+.left-bottom {
+  width: 100%;
+  height: calc(100% - 80px);
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 50px;
+  position: relative;
+}
+/* vertical text */
+.classify {
+  font-size: 30px;
+  font-family: Georgia, serif;
+  font-style: italic;
+  white-space: nowrap;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  position: absolute;
+  bottom: 25%;
+  left: 10%;
+}
+/* species */
+.species {
+  width: 40%;
+  position: absolute;
+  top: 15%;
+  right: 30%;
+}
+
+.species ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.species-list {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 15px 0 15px 25px;
+  position: relative;
+}
+/* dot before the species-list */
+.species-list::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 20px;
+  width: 8px;
+  height: 8px;
+  background-color: #bb3b2f;
+  border-radius: 50%;
+}
+/* species-list text */
+.species-list span:first-child {
+  font-weight: 700;
+  font-size: 16px;
+  color: #111111;
+}
+
+.species-list span:last-child {
+  font-weight: 400;
+  font-size: 15px;
+  color: #555555;
+}
+/* horizontal line after the species-list */
+.species hr {
+  border: none;
+  height: 1px;
+  width: 150px;
+  background-color: #e5e5e5;
+  margin: 0 20px;
+}
+/* right-div */
+.right {
+  height: 100%;
+  width: 50%;
+  color: rgba(255, 255, 255, 0.929);
+  transform: scaleY(1);
+  transform-origin: left top;
+  background-color: rgba(226, 64, 50, 0.914);
+}
+/* Header right */
+.header-right {
+  gap: 50px;
+  padding: 30px;
+}
+/* Navigation menu */
+.navigation-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.navigation-menu a {
+  color: #fff;
+  font-size: 15px;
+  text-decoration: none;
+}
+/* bottom-right */
+.bottom-right {
+  width: 100%;
+  height: calc(100% - 80px);
+  position: relative;
+}
+
+/* center -- right */
+
+.center {
+  padding: 20px;
+  width: 50%;
+  height: 90%;
+  position: absolute;
+  top: 50%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+}
+/*heading inside center*/
+.center h2 {
+  transform: scale(1.2, 1);
+  transform-origin: left top;
+  font-size: 40px;
+  display: inline-block;
+}
+/* characteristics inside center */
+.characteristics {
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+}
+
+.characteristics img {
+  position: absolute;
+  height: 80px;
+  width: 80px;
+  left: 6%;
+  top: 35%;
+}
+
+.size {
+  position: absolute;
+  left: 2%;
+  top: 60%;
+  font-size: 12px;
+}
+/* vertical line inside characteristics */
+.characteristics .vertical-line {
+  width: 1px;
+  height: 90px;
+  background-color: #fff;
+  border: none;
+  margin: 0 20px;
+  position: absolute;
+  left: 20%;
+  top: 20%;
+}
+
+/* Details */
+.icons {
+  flex: 1;
+  min-width: 0;
+}
+/* ul inside icons */
+.icons ul {
+  list-style: none;
+  padding: 0;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.icons-list {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: 50px;
+}
+
+.icons-list i {
+  font-size: 25px;
+  filter: brightness(0) invert(1);
+}
+
+.icons-list:nth-child(2) .detail {
+  position: relative;
+  left: 30px;
+  top: 2px;
+}
+
+.icons-list .icon img {
+  left: 35%;
+  top: 50%;
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+  margin-left: 30px;
+  filter: brightness(0) invert(5);
+}
+/* detail inside icons-list */  
+.detail {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  font-size: 13px;
+  line-height: 1.4;
+}
+/* cart list inside center */
+.cart {
+  width: 100%;
+  height: 50%;
+  padding: 20px 0;
+}
+.cart ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.price-tag {
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+}
+.cart-list {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.cart-list .toggle {
+  font-size: 30px;
+  border: none;
+}
+.cart-list .add-to-collection {
+  background-color: rgba(212, 201, 201, 0.944);
+  padding: 10px 20px;
+  margin-left: 0;
+  color: #111111;
+  border-radius: 5px;
+}
+
+/* end of center -- right */
+/*end of css*/

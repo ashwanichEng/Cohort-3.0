@@ -1,0 +1,283 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+  min-height: 100%;
+  background-color: #0b0b0b;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+main {
+  width: 92%;
+  margin: 0 auto;
+}
+
+/* Header*/
+header {
+  width: 100%;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.logo {
+  width: 250px;
+  height: 50px;
+}
+
+.heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.heading h1 {
+  font-size: large;
+  font-weight: 600;
+  transform: scale(2.5, 2.5);
+  transform-origin: top;
+}
+
+/* section-1*/
+.cards-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.cards {
+  background-color: #141414;
+  width: 320px;
+  height: 450px;
+  border-radius: 16px;
+  border: 2px solid #292929;
+  padding: 0 24px;
+  position: relative;
+}
+.cards:first-child {
+  box-shadow: inset 0 0 10px lab(61.8% 44.04 69.23);
+}
+
+.signature-tag {
+  position: absolute;
+  display: inline-flex;
+  gap: 5px;
+  top: 30px;
+  left: 35px;
+  border: 1px solid #ff9d42;
+  color: #ff9d42;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 15px;
+  z-index: 20;
+}
+
+custom-icon {
+  color: #ff9d42;
+}
+
+.image-sticky-box {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  padding-top: 30px;
+  padding-bottom: 15px;
+
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.cards img {
+  max-width: 100%;
+  height: 400px;
+  object-fit: contain;
+}
+
+.product-details {
+  width: 100%;
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  line-height: 1.5;
+}
+.title {
+  font-size: 24px;
+}
+.subtitle {
+  font-size: 14px;
+}
+
+.divider {
+  width: 10%;
+  height: 1px;
+  border: 0;
+  background-color: #ff9d42;
+  margin: 10px;
+}
+
+.price {
+  color: #ff9d42;
+  font-size: 18px;
+  font-weight: bold;
+}
+/* section-2 */
+
+.signature-culinary {
+  width: 100%;
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin: 20px auto;
+  border: 1px solid #292929;
+  border-radius: 24px;
+  background-color: #141414;
+  position: relative;
+}
+
+.signature-culinary img {
+  width: 30%;
+  max-width: 550px;
+  height: 350px;
+  object-fit: contain;
+  position: relative;
+}
+
+/* Bottom div inside signature-culinary */
+
+.bottom-div {
+  width: 35%;
+  height: 350px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  line-height: 1.5;
+  position: absolute;
+  left: 30%;
+  z-index: 2;
+  gap: 15px;
+}
+
+.signature-culinary h2 {
+  font-size: small;
+  color: #ff9d42;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.signature-culinary h3 {
+  font-size: 30px;
+  transform: scaleY(1.5);
+}
+
+.signature-culinary p {
+  font-size: 14px;
+}
+/* Explore Menu Button */
+.Explore-Menu {
+  border: 1px solid #ff9d42;
+  color: #ff9d42;
+  border-radius: 50px;
+  align-self: flex-start;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 0 20px;
+  font-size: 20px;
+  margin-top: 30px;
+}
+/* Leaf image container */
+.leaf-container {
+  position: absolute;
+  bottom: 0;
+  right: 50px;
+  z-index: 1;
+  object-fit: cover;
+}
+
+.leaf-container img {
+  width: 300px;
+  height: 400px;
+  display: block;
+
+  transform: rotate(30deg);
+  object-position: bottom right;
+  filter: invert(0.1) sepia(2) saturate(3) hue-rotate(345deg);
+  mix-blend-mode: screen;
+}
+/* Footer */
+
+.footer {
+  width: 100%;
+  padding: 25px 50px;
+  border-top: 1px solid #75451e;
+  background-color: #141414;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 15px;
+}
+
+/* Footer navigation links */
+
+.footer-nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-nav a {
+  color: aliceblue;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+/* Separator between links */
+.footer-nav .separator {
+  color: #ff9d42;
+  user-select: none;
+}
+/* Social media icons */
+
+.follow-us-container {
+  display: flex;
+  align-items: center;
+
+  gap: 20px;
+}
+
+/* Container to layout the three circles neatly */
+.social-icons-wrapper {
+  display: flex;
+  gap: 15px;
+}
+
+.social-circle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: 1px solid #ff9d42;
+  color: #ff9d42;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+/* End of CSS */
