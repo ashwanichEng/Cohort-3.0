@@ -1,32 +1,8 @@
-# Assignment 1: New Cotton Weave | loomé.
+git config --global user.name "Ashwani"
 
-A Layout created as part of Cohort 3.0 using HTML and CSS positioning.
+git config --global user.email "ashwaniramesh17@gmail.com"
 
-## Tech Stack
+git config --global core.editor "code -wait"
 
-- HTML5
-- CSS3
-
-## Concepts Practiced
-
-- Semantic HTML
-- CSS styling
-- CSS Positioning
-- Layout
-
-## Learning Outcome
-
-This assignment helped me understand the fundamentals of creating and styling layouts
-
-## Folder Structure
-
-Assignment-1/
-
-- index.html
-- style.css
-- A1-images
-
-## Author
-
-Ashwani Choudhary
+git config --global core.autocrlf "input"
 
